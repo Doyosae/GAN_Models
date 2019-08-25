@@ -1,6 +1,6 @@
 # Introdunction  
-MNIST 데이터들로 여러가지 적대적 생성 신경망을 구현해보고 있어요.  
-연습하는 공간입니다.  
+MNIST 데이터들로 여러가지 적대적 생성 신경망을 구현해보고 있습니다. 
+논문의 조건을 바꾸어가면서 더 공부하면서 GAN 알고리즘을 연습하는 공간입니다.  
   
   
 ***
@@ -9,13 +9,13 @@ MNIST 데이터들로 여러가지 적대적 생성 신경망을 구현해보고
   URL : https://arxiv.org/abs/1406.2661  
 - Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks (DCGAN)  
   URL : https://arxiv.org/abs/1511.06434  
-- Energy-based Generative Adversarial Network  (EBGAN)  
+- Energy-based Generative Adversarial Network (EBGAN)  
   URL : https://arxiv.org/abs/1609.03126  
 - InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets (InfoGAN)  
   URL : https://arxiv.org/abs/1606.03657  
-- BEGAN: Boundary Equilibrium Generative Adversarial Networks  (BEGAN)
+- BEGAN: Boundary Equilibrium Generative Adversarial Networks (BEGAN)  
   URL : https://arxiv.org/abs/1703.10717  
-- Escaping from Collapsing Modes in a Constrained Space  (BEGAN-CS)  
+- Escaping from Collapsing Modes in a Constrained Space (BEGAN-CS)  
   URL : https://arxiv.org/abs/1808.07258  
   
   
