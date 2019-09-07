@@ -1,5 +1,5 @@
 # Introdunction  
-MNIST 데이터들로 여러가지 적대적 생성 신경망을 구현해보고 있습니다. 
+MNIST 데이터들로 여러가지 적대적 생성 신경망을 구현해보고 있습니다.  
 논문의 조건을 바꾸어가면서 더 공부하면서 GAN 알고리즘을 연습하는 공간입니다.  
   
   
@@ -17,6 +17,8 @@ MNIST 데이터들로 여러가지 적대적 생성 신경망을 구현해보고
   URL : https://arxiv.org/abs/1703.10717  
 - Escaping from Collapsing Modes in a Constrained Space (BEGAN-CS)  
   URL : https://arxiv.org/abs/1808.07258  
+- Wasserstein GAN (WGAN)  
+  URL : https://arxiv.org/abs/1701.07875  
   
   
 ***
@@ -68,3 +70,9 @@ MNIST 데이터들로 여러가지 적대적 생성 신경망을 구현해보고
   
 ### 3-3. BEGAN Mode Collapse (>= 75 epochs)  
 ![collapse](https://github.com/Doyosae/GAN_Guideline/blob/master/BEGAN/sample/Mode%20collapse%202%20(75epoch).png)  
+
+## 4. WGAN  
+- Loss Function은 reduce_mean으로 구현한 것이 차이점  
+![WGAN1](https://github.com/Doyosae/GAN_Models/blob/master/WGAN/sample/WGAN1.png)  
+![WGAN2](https://github.com/Doyosae/GAN_Models/blob/master/WGAN/sample/WGAN2.png)  
+![WGAN3](https://github.com/Doyosae/GAN_Models/blob/master/WGAN/sample/WGAN3.png)  
