@@ -73,6 +73,7 @@ MNIST 데이터들로 여러가지 적대적 생성 신경망을 구현해보고
 
 ## 4. WGAN  
 - Loss Function은 reduce_mean으로 구현한 것이 차이점  
+  
 ![WGAN1](https://github.com/Doyosae/GAN_Models/blob/master/WGAN/sample/WGAN1.png)  
 ![WGAN2](https://github.com/Doyosae/GAN_Models/blob/master/WGAN/sample/WGAN2.png)  
 ![WGAN3](https://github.com/Doyosae/GAN_Models/blob/master/WGAN/sample/WGAN3.png)  
