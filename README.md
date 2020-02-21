@@ -37,12 +37,12 @@ MNIST 데이터들로 여러가지 Generative Adversarial Networks을 구현해�
 -  without sqrt에서는 81 Epoch부터 모델이 완전히 죽어버렸다. 왜 그럴까? sqrt가 빠져서 균형을 맞추지 못한 것 (?)    
 -  논문에서의 내용대로 L2 Norm을 적용하면, 수렴 속도는 훨씬 느렸지만, 더 깔끔한 이미지를 얻을 수 있음  
   
-### 2-1. EBGAN without sqrt  
+### 2-1. EBGAN (without Square root)  
 ![EBGAN1](https://github.com/Doyosae/GAN_Guideline/blob/master/EBGAN/sample/EBGAN1.png)  
 ![EBGAN2](https://github.com/Doyosae/GAN_Guideline/blob/master/EBGAN/sample/EBGAN2.png)  
 ![EBGAN3](https://github.com/Doyosae/GAN_Guideline/blob/master/EBGAN/sample/EBGAN3.png)  
   
-### 2-2. EBGAN without sqrt MODE COLLAPSE  
+### 2-2. EBGAN Model is dead (without Square root)   
 ![Collapse](https://github.com/Doyosae/GAN_Guideline/blob/master/EBGAN/sample/81%20epoch.png)  
   
 ### 2-3. EBGAN with L2 Normalization  
@@ -62,7 +62,7 @@ MNIST 데이터들로 여러가지 Generative Adversarial Networks을 구현해�
 - Mode Collapse는 데이터 분포가 연속적인지 강하게 분리되어 있는지에 따라 민감하게 의존하는 것이 아닐까?  
 - BEGAN의 Mode collapse Escaping에 대한 논문은 존재 (앞으로 실험 예정)  
   
-### 3-1. BEGAN Images (== 50 epochs)  
+### 3-1. BEGAN (== 50 epochs)  
 ![BEGAN1](https://github.com/Doyosae/GAN_Guideline/blob/master/BEGAN/sample/BEGAN%20sample%201.png)  
 ![BEGAN2](https://github.com/Doyosae/GAN_Guideline/blob/master/BEGAN/sample/BEGAN%20sample%202.png)  
 ![BEGAN3](https://github.com/Doyosae/GAN_Guideline/blob/master/BEGAN/sample/BEGAN%20sample%203.png)  
