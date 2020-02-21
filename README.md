@@ -31,9 +31,10 @@ MNIST 데이터들로 여러가지 Generative Adversarial Networks을 구현해�
 ![DCGAN3](https://github.com/Doyosae/GAN_Guideline/blob/master/DCGAN/sample/DCGAN3.png)  
   
   
+  
 ## 2. EBGAN  
--  Generator의 수렴 속도가 놀랍도록 빨랐음  
--  81 Epoch부터 Mode Collapse가 발생했음. 왜 그럴까? 손실함수에 sqrt가 빠져서 학습 억제가 안된 것으로 추론  
+-  Generator의 수렴 속도가 매우 빨랐음  
+-  without sqrt에서는 81 Epoch부터 모델이 완전히 죽어버렸다. 왜 그럴까? sqrt가 빠져서 균형을 맞추지 못한 것 (?)    
 -  논문에서의 내용대로 L2 Norm을 적용하면, 수렴 속도는 훨씬 느렸지만, 더 깔끔한 이미지를 얻을 수 있음  
   
 ### 2-1. EBGAN without sqrt  
@@ -50,14 +51,16 @@ MNIST 데이터들로 여러가지 Generative Adversarial Networks을 구현해�
 ![L23](https://github.com/Doyosae/GAN_Guideline/blob/master/EBGAN/sample/L2%20Norm%203.png)  
   
   
+  
 ## 3. BEGAN
-- Gamma 값은 Mode의 diversiy를 결정함. Gamma 파라미터를 1 이하로 하면 심각한 Mode Collapse가 발생함  
-- 값을 1 이상으로 높이면 Mode Collapse를 조금 완화함. 그러나 생성 이미지의 품질은 하락함  
-- Latent Space를 탐색하면 GAN의 학습 특성은 잘 반영한 것임을 알 수 있음 (기억 기반이 아님)  
+- Gamma 값은 Mode의 diversiy를 결정함. Gamma 파라미터를 1 이하로 하면 심각한 Mode Collapse가 발생  
+- 값을 1 이상으로 높이면 Mode Collapse를 조금 완화함. 그러나 생성 이미지의 품질은 하락  
+- Latent Space를 탐색하면 GAN의 학습 특성은 잘 반영한 것임을 알 수 있음 (기억 기반이 아님을 증명)  
 - 보통 GAN의 벤치마크로 쓰이는 데이터셋은 CelebA와 같이 MNIST에 비해 Data Distribution이 Continuous한 특성이 강함  
-- BEGAN의 논문에서도 클래스 분리가 선형적으로 명시된 경우에 대해서는 실험하지 않은듯함 (단어 선택이 적절한지?)  
-- Mode Collapse는 데이터 분포에 강력하게 의존하는 것이 아닐까???  
-- BEGAN의 Mode collapse Escaping에 대한 논문은 존재 (실험 예정)  
+- BEGAN의 논문에서도 강한 Multi mode에 대해서는 구체적인 대안을 제시하지 않았음  
+- 예를 들어 백인 남성, 황인 남성, 흑인 남성의 데이터 관계와 숫자 1, 2, 3의 데이터 관계에서 어떠한 차이점이 있는지 알아야 함  
+- Mode Collapse는 데이터 분포가 연속적인지 강하게 분리되어 있는지에 따라 민감하게 의존하는 것이 아닐까?  
+- BEGAN의 Mode collapse Escaping에 대한 논문은 존재 (앞으로 실험 예정)  
   
 ### 3-1. BEGAN Images (== 50 epochs)  
 ![BEGAN1](https://github.com/Doyosae/GAN_Guideline/blob/master/BEGAN/sample/BEGAN%20sample%201.png)  
@@ -70,7 +73,9 @@ MNIST 데이터들로 여러가지 Generative Adversarial Networks을 구현해�
   
 ### 3-3. BEGAN Mode Collapse (>= 75 epochs)  
 ![collapse](https://github.com/Doyosae/GAN_Guideline/blob/master/BEGAN/sample/Mode%20collapse%202%20(75epoch).png)  
-
+  
+  
+  
 ## 4. WGAN  
 - Loss Function은 reduce_mean으로 구현한 것이 차이점  
   
