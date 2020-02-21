@@ -1,5 +1,5 @@
 # Introdunction  
-MNIST 데이터들로 여러가지 적대적 생성 신경망을 구현해보고 있습니다.  
+MNIST 데이터들로 여러가지 Generative Adversarial Networks을 구현해보고 있습니다.  
 논문의 조건을 바꾸어가면서 더 공부하면서 GAN 알고리즘을 연습하는 공간입니다.  
   
   
