@@ -1,6 +1,6 @@
 # Introdunction  
-MNIST 데이터들로 여러가지 Generative Adversarial Networks을 구현해보고 있습니다.  
-논문의 조건을 바꾸어가면서 더 공부하면서 GAN 알고리즘을 연습하는 공간입니다.  
+MNIST 데이터들로 여러가지 Generative Adversarial Networks을 구현합니다.  
+논문의 조건을 생각하고 궁금하면 바꾸어가면서 GAN 알고리즘을 연습합니다.    
   
   
 ***
@@ -19,6 +19,8 @@ MNIST 데이터들로 여러가지 Generative Adversarial Networks을 구현해�
   URL : https://arxiv.org/abs/1808.07258  
 - Wasserstein GAN (WGAN)  
   URL : https://arxiv.org/abs/1701.07875  
+- Least Squares Generative Adversarial Networks (LSGAN)  
+  URL : https://arxiv.org/abs/1611.04076
   
   
 ***
@@ -82,3 +84,14 @@ MNIST 데이터들로 여러가지 Generative Adversarial Networks을 구현해�
 ![WGAN1](https://github.com/Doyosae/GAN_Models/blob/master/WGAN/sample/WGAN1.png)  
 ![WGAN2](https://github.com/Doyosae/GAN_Models/blob/master/WGAN/sample/WGAN2.png)  
 ![WGAN3](https://github.com/Doyosae/GAN_Models/blob/master/WGAN/sample/WGAN3.png)  
+  
+  
+## 5. LSGAN  
+ - 나의 구현에서는 Adam optimizer는 좋은 성능을 발휘하지 못했음. (batch nomalization을 적용하였음에도 불구하고)  
+ - 적절한 learning rate를 찾는데 오래 걸렸음 (이전에 구현했던 MNIST GAN 아키텍처를 기반으로 헀을때)  
+ - RMSProp (learning_rate = 0.0005 for discriminator, learning_rate = 0.00025 for generator)를 권장  
+ - 60,000장 이미지를 모두 사용했을 때 1 epoch 이면 최소 20~25 epoch 이상을 권장  
+ 
+ ![LSGAN1](https://github.com/Doyosae/GAN_Models/blob/master/LSGAN/sample/LSGAN%201.png)  
+ ![LSGAN2](https://github.com/Doyosae/GAN_Models/blob/master/LSGAN/sample/LSGAN%202.png)  
+ ![LSGAN3](https://github.com/Doyosae/GAN_Models/blob/master/LSGAN/sample/LSGAN%203.png)  
