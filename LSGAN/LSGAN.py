@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import tensorflow as tf
 from tensorflow.keras.datasets import mnist
 from tensorflow.keras.layers import *
@@ -256,8 +250,8 @@ class LSGAN_model ():
                 generator_loss = LSGAN_MODEL.train_on_batch(random_noise, real)
                 generator_loss = 0.5 * np.float32(generator_loss)
 
-                print ("%d %d [Disc loss: %f, acc.: %.2f%%] [Gene loss: %f, acc.: %.2f%%]"                        %(epoch+1, batch+1, 
-                         discriminator_loss[0], 100*discriminator_loss[1], 
+                print ("%d %d [Disc loss: %f, acc.: %.2f%%] [Gene loss: %f, acc.: %.2f%%]" \
+                       %(epoch+1, batch+1, discriminator_loss[0], 100*discriminator_loss[1], 
                          generator_loss[0], 100*generator_loss[1]))
 
 
@@ -279,10 +273,7 @@ class LSGAN_model ():
             plt.close(fig)
 
 
-# In[ ]:
-
 
 if __name__ == '__main__':
     LSGAN = LSGAN_model()
     LSGAN.train_FUNCTION()
-
