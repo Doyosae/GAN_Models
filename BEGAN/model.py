@@ -2,9 +2,9 @@ import os, ssl
 import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
-from Module import BEGAN
-from Utility import Data_Processing
-from Utility import GetNoiseFunctions
+from module import BEGAN
+from utility import Data_Processing
+from utility import GetNoiseFunctions
 
 if (not os.environ.get('PYTHONHTTPSVERIFY', '') and
     getattr(ssl, '_create_unverified_context', None)): 
