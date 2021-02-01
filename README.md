@@ -13,8 +13,9 @@ MNIST 데이터들로 여러가지 Generative Adversarial Networks을 구현
 - [Least Squares Generative Adversarial Networks](https://arxiv.org/abs/1611.04076)
   
 # Summary  
-## 1. DCGAN  
-- Generative Adversairal Network의 첫 시작이 되는 논문
+## 1. GAN  
+- Generative Adversairal Network의 첫 시작이 되는 논문  
+
 ![DCGAN1](https://github.com/Doyosae/GAN_Guideline/blob/master/DCGAN/sample/DCGAN1.png)  
 ![DCGAN2](https://github.com/Doyosae/GAN_Guideline/blob/master/DCGAN/sample/DCGAN2.png)  
 ![DCGAN3](https://github.com/Doyosae/GAN_Guideline/blob/master/DCGAN/sample/DCGAN3.png)  
