@@ -56,6 +56,7 @@ MNIST 데이터들로 여러가지 Generative Adversarial Networks을 구현
   
 ## 4. WGAN  
 - Loss Function은 reduce_mean으로 구현한 것이 차이점  
+  
 ![WGAN1](https://github.com/Doyosae/GAN_Models/blob/master/WGAN/sample/WGAN1.png)  
 ![WGAN2](https://github.com/Doyosae/GAN_Models/blob/master/WGAN/sample/WGAN2.png)  
 ![WGAN3](https://github.com/Doyosae/GAN_Models/blob/master/WGAN/sample/WGAN3.png)  
@@ -65,6 +66,7 @@ MNIST 데이터들로 여러가지 Generative Adversarial Networks을 구현
 - 적절한 learning rate를 찾는데 오래 걸렸음 (이전에 구현했던 MNIST GAN을 기반으로 헀을때)  
 - RMSProp (learning_rate = 0.0005 for discriminator, learning_rate = 0.00025 for generator)를 권장  
 - 60,000장 이미지를 모두 사용했을 때 1 epoch 이면 최소 20~25 epoch 이상을 권장  
+  
 ![LSGAN1](https://github.com/Doyosae/GAN_Models/blob/master/LSGAN/sample/LSGAN%201.png)  
 ![LSGAN2](https://github.com/Doyosae/GAN_Models/blob/master/LSGAN/sample/LSGAN%202.png)  
 ![LSGAN3](https://github.com/Doyosae/GAN_Models/blob/master/LSGAN/sample/LSGAN%203.png)  
